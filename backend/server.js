@@ -105,6 +105,6 @@ router.route('/issues/delete/:id').get(function (req, res) {
 
 app.use('/', router);
 
-app.listen(1643, function () {
+app.listen(process.env.PORT || 4000, function () {
     return console.log('Express Server Running on port 4000');
 });
