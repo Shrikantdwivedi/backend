@@ -21,4 +21,6 @@ const Issue=new Schema({
     }
 });
 
+ // needed to run node application through babel and command npm run dev,"build": "babel server.js --out-dir build"
+
 module.exports= mongoose.model('Issue',Issue);
